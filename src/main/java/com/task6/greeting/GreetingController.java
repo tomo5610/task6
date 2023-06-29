@@ -7,8 +7,9 @@ import java.time.LocalDateTime;
 
 @RestController
 public class GreetingController {
-    @GetMapping("/localdatetime")
-    public LocalDateTime getLocalDateTime() {
-        return LocalDateTime.now();
+    @GetMapping("/time")
+    public Time localtime() {
+
+        return new Time("timestamp", LocalDateTime.now());
     }
 }
