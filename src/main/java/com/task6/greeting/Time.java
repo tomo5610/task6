@@ -3,23 +3,23 @@ package com.task6.greeting;
 import java.time.LocalDateTime;
 
 public class Time {
-    private String timeStamp;
+    private String message;
 
     private LocalDateTime nowTime;
 
-    public Time(String timeStamp, LocalDateTime nowTime) {
-        this.timeStamp = timeStamp;
+    public Time(String message, LocalDateTime nowTime) {
+        this.message = message;
         this.nowTime = nowTime;
     }
 
-    public String getTimeStamp() {
+    public String getmessage() {
 
-        return timeStamp;
+        return message;
     }
 
-    public void setTimeStamp(String timeStamp) {
+    public void setTimeStamp(String message) {
 
-        this.timeStamp = timeStamp;
+        this.message = message;
     }
 
     public LocalDateTime getNowTime() {

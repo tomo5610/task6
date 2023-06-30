@@ -10,6 +10,6 @@ public class GreetingController {
     @GetMapping("/time")
     public Time localtime() {
 
-        return new Time("timestamp", LocalDateTime.now());
+        return new Time("Hello world", LocalDateTime.now());
     }
 }
